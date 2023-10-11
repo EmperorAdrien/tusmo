@@ -1,0 +1,8 @@
+4d1f35,172.18.0.1,GET,http://localhost:8000/home,1697031796,,200
+067734,172.18.0.1,GET,http://localhost:8000/favicon.ico,1697031796,b57ce6,404
+b57ce6,172.18.0.1,GET,http://localhost:8000/favicon.ico,1697031796,,404
+79df49,172.18.0.1,GET,http://localhost:8000/home,1697031797,,200
+6adc7c,172.18.0.1,GET,http://localhost:8000/home,1697031798,,200
+6f9d9e,172.18.0.1,GET,http://localhost:8000/home,1697031798,,200
+b88b6c,172.18.0.1,GET,http://localhost:8000/home,1697032155,,200
+67281e,172.18.0.1,GET,http://localhost:8000/home,1697032476,,200
