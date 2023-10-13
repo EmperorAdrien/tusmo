@@ -6,3 +6,17 @@ b57ce6,172.18.0.1,GET,http://localhost:8000/favicon.ico,1697031796,,404
 6f9d9e,172.18.0.1,GET,http://localhost:8000/home,1697031798,,200
 b88b6c,172.18.0.1,GET,http://localhost:8000/home,1697032155,,200
 67281e,172.18.0.1,GET,http://localhost:8000/home,1697032476,,200
+4a98d4,172.19.0.1,GET,http://localhost:8000/home/test?vscodeBrowserReqId=1697186790851,1697186791,ee8aa1,404
+ee8aa1,172.19.0.1,GET,http://localhost:8000/home/test?vscodeBrowserReqId=1697186790851,1697186791,,404
+35208d,172.19.0.1,GET,http://localhost:8000/home/test?vscodeBrowserReqId=1697186791969,1697186791,4318eb,404
+4318eb,172.19.0.1,GET,http://localhost:8000/home/test?vscodeBrowserReqId=1697186791969,1697186791,,404
+8513b5,172.19.0.1,GET,http://localhost:8000/home/?vscodeBrowserReqId=1697186796574,1697186796,,301
+dd8fa6,172.19.0.1,GET,http://localhost:8000/home?vscodeBrowserReqId=1697186796574,1697186796,,200
+15fc93,172.19.0.1,GET,http://localhost:8000/home/,1697186811,,301
+0eaee9,172.19.0.1,GET,http://localhost:8000/home,1697186811,,200
+1780fe,172.19.0.1,GET,http://localhost:8000/home/?vscodeBrowserReqId=1697192061761,1697192061,,301
+4ed274,172.19.0.1,GET,http://localhost:8000/home?vscodeBrowserReqId=1697192061761,1697192062,,200
+3eee07,172.19.0.1,GET,http://localhost:8000/home/?vscodeBrowserReqId=1697192074956,1697192074,,301
+f641a6,172.19.0.1,GET,http://localhost:8000/home?vscodeBrowserReqId=1697192074956,1697192075,,200
+adfcbc,172.19.0.1,GET,http://localhost:8000/home/?vscodeBrowserReqId=1697192082120,1697192082,,301
+503956,172.19.0.1,GET,http://localhost:8000/home?vscodeBrowserReqId=1697192082120,1697192082,,200
