@@ -11,10 +11,12 @@ class HomeController extends AbstractController
     #[Route('/home')]
     public function number(): Response
     {
-        $number = random_int(0, 100);
+        // $number = random_int(0, 100);
+        // $username = "Adrien"
 
         return $this->render('home/home.html.twig', [
-            'number' => $number,
+            // 'number' => $number,
+            // 'username' => $username
         ]);
     }
 }
