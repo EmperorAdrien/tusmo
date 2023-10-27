@@ -54,6 +54,11 @@ class __TwigTemplate_8537dcea5d95e323a51f25df0262c68b extends Template
             height: 100vh;
         }
 
+        a {
+            color: black;
+            text-decoration: none; /* no underline */
+        }
+
         .container {
             width: 400px;
             background-color: #006699;
@@ -71,6 +76,7 @@ class __TwigTemplate_8537dcea5d95e323a51f25df0262c68b extends Template
         }
 
         .homebutton {
+            text-align: center;
             background-color: #FFFFFF;
             padding: 10px 20px;
             border-radius: 5px;
@@ -80,7 +86,7 @@ class __TwigTemplate_8537dcea5d95e323a51f25df0262c68b extends Template
             cursor: pointer;
             width: 100%;
             box-sizing: border-box;
-            filter: drop-shadow(0px 8px);
+            filter: drop-shadow(0px 8px #000000);
             font-size : 30px;
         }
 
@@ -103,15 +109,18 @@ class __TwigTemplate_8537dcea5d95e323a51f25df0262c68b extends Template
         }
 
     </style>
+
 </head>
 
 <body>
     <div class=\"container\">
         <div class=\"header\">TUSMO</div>
-        <button class=\"homebutton\">DAILY WORD</button>
-        <button class=\"homebutton\">DAILY STREAK</button>
-        <button class=\"homebutton\">SOLO</button>
-        <button class=\"homebutton\">MULTIPLAYER</button>
+
+        <a class=\"homebutton\" href=\"/daily\">DAILY WORD</a>
+        <a class=\"homebutton\" href=\"/dailystreak\">DAILY STREAK</a>
+        <a class=\"homebutton\" href=\"/solo\">SOLO</a>
+        <a class=\"homebutton\" href=\"/multiplayer\">MULTIPLAYER</a>
+        
         <div class=\"icons\">
             <img src=\"path_to_settings_icon.png\" alt=\"Settings\" class=\"icon\">
             <img src=\"path_to_sound_icon.png\" alt=\"Sound\" class=\"icon\">
@@ -158,6 +167,11 @@ class __TwigTemplate_8537dcea5d95e323a51f25df0262c68b extends Template
             height: 100vh;
         }
 
+        a {
+            color: black;
+            text-decoration: none; /* no underline */
+        }
+
         .container {
             width: 400px;
             background-color: #006699;
@@ -175,6 +189,7 @@ class __TwigTemplate_8537dcea5d95e323a51f25df0262c68b extends Template
         }
 
         .homebutton {
+            text-align: center;
             background-color: #FFFFFF;
             padding: 10px 20px;
             border-radius: 5px;
@@ -184,7 +199,7 @@ class __TwigTemplate_8537dcea5d95e323a51f25df0262c68b extends Template
             cursor: pointer;
             width: 100%;
             box-sizing: border-box;
-            filter: drop-shadow(0px 8px);
+            filter: drop-shadow(0px 8px #000000);
             font-size : 30px;
         }
 
@@ -207,15 +222,18 @@ class __TwigTemplate_8537dcea5d95e323a51f25df0262c68b extends Template
         }
 
     </style>
+
 </head>
 
 <body>
     <div class=\"container\">
         <div class=\"header\">TUSMO</div>
-        <button class=\"homebutton\">DAILY WORD</button>
-        <button class=\"homebutton\">DAILY STREAK</button>
-        <button class=\"homebutton\">SOLO</button>
-        <button class=\"homebutton\">MULTIPLAYER</button>
+
+        <a class=\"homebutton\" href=\"/daily\">DAILY WORD</a>
+        <a class=\"homebutton\" href=\"/dailystreak\">DAILY STREAK</a>
+        <a class=\"homebutton\" href=\"/solo\">SOLO</a>
+        <a class=\"homebutton\" href=\"/multiplayer\">MULTIPLAYER</a>
+        
         <div class=\"icons\">
             <img src=\"path_to_settings_icon.png\" alt=\"Settings\" class=\"icon\">
             <img src=\"path_to_sound_icon.png\" alt=\"Sound\" class=\"icon\">
