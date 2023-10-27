@@ -14,6 +14,10 @@ return [
         '/_profiler/phpinfo' => [[['_route' => '_profiler_phpinfo', '_controller' => 'web_profiler.controller.profiler::phpinfoAction'], null, null, null, false, false, null]],
         '/_profiler/xdebug' => [[['_route' => '_profiler_xdebug', '_controller' => 'web_profiler.controller.profiler::xdebugAction'], null, null, null, false, false, null]],
         '/_profiler/open' => [[['_route' => '_profiler_open_file', '_controller' => 'web_profiler.controller.profiler::openAction'], null, null, null, false, false, null]],
+        '/daily' => [[['_route' => 'app_game_daily', '_controller' => 'App\\Controller\\GameController::daily'], null, null, null, false, false, null]],
+        '/dailystreak' => [[['_route' => 'app_game_dailystreak', '_controller' => 'App\\Controller\\GameController::dailyStreak'], null, null, null, false, false, null]],
+        '/solo' => [[['_route' => 'app_game_solo', '_controller' => 'App\\Controller\\GameController::solo'], null, null, null, false, false, null]],
+        '/multiplayer' => [[['_route' => 'app_game_multiplayer', '_controller' => 'App\\Controller\\GameController::multiplayer'], null, null, null, false, false, null]],
         '/home' => [[['_route' => 'app_home_number', '_controller' => 'App\\Controller\\HomeController::number'], null, null, null, false, false, null]],
     ],
     [ // $regexpList

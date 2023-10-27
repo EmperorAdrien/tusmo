@@ -16,5 +16,9 @@ return [
     '_profiler_router' => [['token'], ['_controller' => 'web_profiler.controller.router::panelAction'], [], [['text', '/router'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], [], []],
     '_profiler_exception' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::body'], [], [['text', '/exception'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], [], []],
     '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::stylesheet'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], [], []],
+    'app_game_daily' => [[], ['_controller' => 'App\\Controller\\GameController::daily'], [], [['text', '/daily']], [], [], []],
+    'app_game_dailystreak' => [[], ['_controller' => 'App\\Controller\\GameController::dailyStreak'], [], [['text', '/dailystreak']], [], [], []],
+    'app_game_solo' => [[], ['_controller' => 'App\\Controller\\GameController::solo'], [], [['text', '/solo']], [], [], []],
+    'app_game_multiplayer' => [[], ['_controller' => 'App\\Controller\\GameController::multiplayer'], [], [['text', '/multiplayer']], [], [], []],
     'app_home_number' => [[], ['_controller' => 'App\\Controller\\HomeController::number'], [], [['text', '/home']], [], [], []],
 ];
