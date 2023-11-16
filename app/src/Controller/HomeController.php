@@ -1,5 +1,5 @@
 <?php
-// src/Controller/HomeController.php
+
 namespace App\Controller;
 
 use Symfony\Component\HttpFoundation\Response;
@@ -8,15 +8,17 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class HomeController extends AbstractController
 {
-    #[Route('/home')]
+    #[Route('/home', name: "app_home")]
     public function number(): Response
     {
-        // $number = random_int(0, 100);
-        // $username = "Adrien"
+        // si pas logged in -> renvoie sur login
+        // ...
+        // ...
 
+
+        // sinon render la page avec infos user
         return $this->render('home/home.html.twig', [
-            // 'number' => $number,
-            // 'username' => $username
+            // 'last_username' => $lastUsername
         ]);
     }
 }

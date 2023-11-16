@@ -1,0 +1,22 @@
+{
+  "name": "tusmo",
+  "version": "1.0.0",
+  "description": "Symfony Documentation : https://symfony.com/doc/current/index.html | Symfony Tutorial : https://youtu.be/M3VyiKbtbzI?feature=shared | site dont on s'inspire : https://www.tusmo.xyz/",
+  "main": "webpack.config.js",
+  "devDependencies": {
+    "@symfony/webpack-encore": "^4.5.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev-server": "encore dev-server",
+    "dev": "encore dev",
+    "watch": "encore dev --watch",
+    "build": "encore production --progress"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv-flow-webpack": "^2.0.0",
+    "webpack": "^4.47.0"
+  }
+}

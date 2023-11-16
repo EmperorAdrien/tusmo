@@ -20,5 +20,8 @@ return [
     'app_game_dailystreak' => [[], ['_controller' => 'App\\Controller\\GameController::dailyStreak'], [], [['text', '/dailystreak']], [], [], []],
     'app_game_solo' => [[], ['_controller' => 'App\\Controller\\GameController::solo'], [], [['text', '/solo']], [], [], []],
     'app_game_multiplayer' => [[], ['_controller' => 'App\\Controller\\GameController::multiplayer'], [], [['text', '/multiplayer']], [], [], []],
-    'app_home_number' => [[], ['_controller' => 'App\\Controller\\HomeController::number'], [], [['text', '/home']], [], [], []],
+    'app_home' => [[], ['_controller' => 'App\\Controller\\HomeController::number'], [], [['text', '/home']], [], [], []],
+    'app_register' => [[], ['_controller' => 'App\\Controller\\RegistrationController::register'], [], [['text', '/register']], [], [], []],
+    'app_login' => [[], ['_controller' => 'App\\Controller\\SecurityController::login'], [], [['text', '/login']], [], [], []],
+    'app_logout' => [[], ['_controller' => 'App\\Controller\\SecurityController::logout'], [], [['text', '/logout']], [], [], []],
 ];

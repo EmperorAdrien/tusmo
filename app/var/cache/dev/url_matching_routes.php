@@ -18,7 +18,10 @@ return [
         '/dailystreak' => [[['_route' => 'app_game_dailystreak', '_controller' => 'App\\Controller\\GameController::dailyStreak'], null, null, null, false, false, null]],
         '/solo' => [[['_route' => 'app_game_solo', '_controller' => 'App\\Controller\\GameController::solo'], null, null, null, false, false, null]],
         '/multiplayer' => [[['_route' => 'app_game_multiplayer', '_controller' => 'App\\Controller\\GameController::multiplayer'], null, null, null, false, false, null]],
-        '/home' => [[['_route' => 'app_home_number', '_controller' => 'App\\Controller\\HomeController::number'], null, null, null, false, false, null]],
+        '/home' => [[['_route' => 'app_home', '_controller' => 'App\\Controller\\HomeController::number'], null, null, null, false, false, null]],
+        '/register' => [[['_route' => 'app_register', '_controller' => 'App\\Controller\\RegistrationController::register'], null, null, null, false, false, null]],
+        '/login' => [[['_route' => 'app_login', '_controller' => 'App\\Controller\\SecurityController::login'], null, null, null, false, false, null]],
+        '/logout' => [[['_route' => 'app_logout', '_controller' => 'App\\Controller\\SecurityController::logout'], null, null, null, false, false, null]],
     ],
     [ // $regexpList
         0 => '{^(?'

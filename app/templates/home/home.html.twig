@@ -1,5 +1,6 @@
 {# templates/home/home.html.twig #}
 {# <h1>Your lucky number is {{ number }}</h1> #}
+{% block style %}
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -83,24 +84,31 @@
         }
 
     </style>
+    {% endblock %}
 
 </head>
+    
+{% block body %}
+    <body>
+        <div class="container">
+            {% if app.user %}
+                <div class="mb-3">
+                    You are logged in as {{ app.user.userIdentifier }}, <a href="{{ path('app_logout') }}">Logout</a>
+                </div>
+            {% endif %}
+            <div class="header">TUSMO</div>
 
-<body>
-    <div class="container">
-        <div class="header">TUSMO</div>
+            <a class="homebutton" href="/daily">DAILY WORD</a>
+            <a class="homebutton" href="/dailystreak">DAILY STREAK</a>
+            <a class="homebutton" href="/solo">SOLO</a>
+            <a class="homebutton" href="/multiplayer">MULTIPLAYER</a>
 
-        <a class="homebutton" href="/daily">DAILY WORD</a>
-        <a class="homebutton" href="/dailystreak">DAILY STREAK</a>
-        <a class="homebutton" href="/solo">SOLO</a>
-        <a class="homebutton" href="/multiplayer">MULTIPLAYER</a>
-
-        <div class="icons">
-            <img src="path_to_settings_icon.png" alt="Settings" class="icon">
-            <img src="path_to_sound_icon.png" alt="Sound" class="icon">
-            <img src="path_to_video_icon.png" alt="Video" class="icon">
-            <img src="path_to_flag_icon.png" alt="Flag" class="icon">
+            <div class="icons">
+                <img src="path_to_settings_icon.png" alt="Settings" class="icon">
+                <img src="path_to_sound_icon.png" alt="Sound" class="icon">
+                <img src="path_to_video_icon.png" alt="Video" class="icon">
+                <img src="path_to_flag_icon.png" alt="Flag" class="icon">
+            </div>
         </div>
-    </div>
-</body>
-</html>
+    </body>
+{% endblock %}
