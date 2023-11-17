@@ -280,7 +280,7 @@ class __TwigTemplate_47fbe9fb8b3607a3422cf832c28b4619 extends Template
                             <b>Token class</b>
                             <span>";
                     // line 100
-                    echo $this->extensions['Symfony\Bridge\Twig\Extension\CodeExtension']->abbrClass(twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new RuntimeError('Variable "collector" does not exist.', 100, $this->source); })()), "tokenClass", [], "any", false, false, false, 100));
+                    echo $this->extensions['Symfony\Bridge\Twig\Extension\CodeExtension']->abbrClass(twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new RuntimeError('Variable "collector" does not exist.', 100, $this->source); })()), "tokenClass", [], "any", false, false, false, 100), "html", null, true));
                     echo "</span>
                         </div>
                     ";
