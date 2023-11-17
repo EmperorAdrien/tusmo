@@ -24,12 +24,16 @@ class __TwigTemplate_86f78d5c5445a89e2245fb8799327591 extends Template
 
         $this->source = $this->getSourceContext();
 
-        $this->parent = false;
-
         $this->blocks = [
             'style' => [$this, 'block_style'],
             'body' => [$this, 'block_body'],
         ];
+    }
+
+    protected function doGetParent(array $context)
+    {
+        // line 2
+        return "base.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = [])
@@ -41,15 +45,8 @@ class __TwigTemplate_86f78d5c5445a89e2245fb8799327591 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "home/home.html.twig"));
 
-        // line 3
-        $this->displayBlock('style', $context, $blocks);
-        // line 88
-        echo "
-</head>
-    
-";
-        // line 91
-        $this->displayBlock('body', $context, $blocks);
+        $this->parent = $this->loadTemplate("base.html.twig", "home/home.html.twig", 2);
+        $this->parent->display($context, array_merge($this->blocks, $blocks));
         
         $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
 
@@ -58,7 +55,7 @@ class __TwigTemplate_86f78d5c5445a89e2245fb8799327591 extends Template
 
     }
 
-    // line 3
+    // line 4
     public function block_style($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -68,86 +65,13 @@ class __TwigTemplate_86f78d5c5445a89e2245fb8799327591 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "style"));
 
-        // line 4
-        echo "<head>
+        // line 5
+        echo "    <head>
     <meta charset=\"UTF-8\">
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
-    <title>TUSMO</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #006699;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        a {
-            color: black;
-            text-decoration: none; /* no underline */
-        }
-
-        .container {
-            width: 400px;
-            background-color: #006699;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        ";
-        // line 38
-        echo "
-        .header {
-            background-color: #E74D50;
-            padding: 20px;
-            border-radius: 5px;
-            margin-bottom: 40px;
-            font-size: 60px; /* Augmentation de la taille */
-            text-shadow: 2px 2px 4px #000; /* Effet d'ombre portée */
-            letter-spacing: 2px; /* Espacement des lettres */
-            font-weight: bold; /* Gras */
-            color: #FFF; /* Couleur du texte en blanc pour un contraste */
-            font-family: 'Georgia', serif; /* Changement de police */
-        }
-
-
-        .homebutton {
-            text-align: center;
-            background-color: #FFFFFF;
-            padding: 10px 20px;
-            border-radius: 5px;
-            margin-bottom: 20px;
-            border: none;
-            font-size: 1rem;
-            cursor: pointer;
-            width: 100%;
-            box-sizing: border-box;
-            filter: drop-shadow(0px 8px #000000);
-            font-size : 30px;
-        }
-
-        .homebutton:hover {
-            background-color : #009999;
-            -webkit-transition: all 0.2s ease-in-out;
-        }
-
-        .icons {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 20px;
-            width: 80%;
-            filter: drop-shadow(0px 8px);
-        }
-
-        .icon {
-            width: 24px;
-            height: 24px;
-        }
-
-    </style>
-    ";
+    <title>TUSMO</title>   
+    </head>
+";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -156,7 +80,7 @@ class __TwigTemplate_86f78d5c5445a89e2245fb8799327591 extends Template
 
     }
 
-    // line 91
+    // line 12
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -166,24 +90,24 @@ class __TwigTemplate_86f78d5c5445a89e2245fb8799327591 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 92
+        // line 13
         echo "    <body>
         <div class=\"container\">
             ";
-        // line 94
-        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 94, $this->source); })()), "user", [], "any", false, false, false, 94)) {
-            // line 95
+        // line 15
+        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 15, $this->source); })()), "user", [], "any", false, false, false, 15)) {
+            // line 16
             echo "                <div class=\"mb-3\">
                     You are logged in as ";
-            // line 96
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 96, $this->source); })()), "user", [], "any", false, false, false, 96), "userIdentifier", [], "any", false, false, false, 96), "html", null, true);
+            // line 17
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 17, $this->source); })()), "user", [], "any", false, false, false, 17), "userIdentifier", [], "any", false, false, false, 17), "html", null, true);
             echo ", <a href=\"";
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_logout");
             echo "\">Logout</a>
                 </div>
             ";
         }
-        // line 99
+        // line 20
         echo "            <div class=\"header\">TUSMO</div>
 
             <a class=\"homebutton\" href=\"/daily\">DAILY WORD</a>
@@ -213,102 +137,28 @@ class __TwigTemplate_86f78d5c5445a89e2245fb8799327591 extends Template
         return "home/home.html.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  187 => 99,  179 => 96,  176 => 95,  174 => 94,  170 => 92,  160 => 91,  101 => 38,  72 => 4,  62 => 3,  52 => 91,  47 => 88,  45 => 3,);
+        return array (  111 => 20,  103 => 17,  100 => 16,  98 => 15,  94 => 13,  84 => 12,  69 => 5,  59 => 4,  36 => 2,);
     }
 
     public function getSourceContext()
     {
         return new Source("{# templates/home/home.html.twig #}
-{# <h1>Your lucky number is {{ number }}</h1> #}
+{% extends 'base.html.twig' %}
+
 {% block style %}
-<head>
+    <head>
     <meta charset=\"UTF-8\">
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
-    <title>TUSMO</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #006699;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        a {
-            color: black;
-            text-decoration: none; /* no underline */
-        }
-
-        .container {
-            width: 400px;
-            background-color: #006699;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        {# .header {
-            background-color: #E74D50;
-            padding: 15px;
-            border-radius: 5px;
-            margin-bottom: 40px;
-            font-size : 50px;
-        } #}
-
-        .header {
-            background-color: #E74D50;
-            padding: 20px;
-            border-radius: 5px;
-            margin-bottom: 40px;
-            font-size: 60px; /* Augmentation de la taille */
-            text-shadow: 2px 2px 4px #000; /* Effet d'ombre portée */
-            letter-spacing: 2px; /* Espacement des lettres */
-            font-weight: bold; /* Gras */
-            color: #FFF; /* Couleur du texte en blanc pour un contraste */
-            font-family: 'Georgia', serif; /* Changement de police */
-        }
-
-
-        .homebutton {
-            text-align: center;
-            background-color: #FFFFFF;
-            padding: 10px 20px;
-            border-radius: 5px;
-            margin-bottom: 20px;
-            border: none;
-            font-size: 1rem;
-            cursor: pointer;
-            width: 100%;
-            box-sizing: border-box;
-            filter: drop-shadow(0px 8px #000000);
-            font-size : 30px;
-        }
-
-        .homebutton:hover {
-            background-color : #009999;
-            -webkit-transition: all 0.2s ease-in-out;
-        }
-
-        .icons {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 20px;
-            width: 80%;
-            filter: drop-shadow(0px 8px);
-        }
-
-        .icon {
-            width: 24px;
-            height: 24px;
-        }
-
-    </style>
-    {% endblock %}
-
-</head>
+    <title>TUSMO</title>   
+    </head>
+{% endblock %}
     
 {% block body %}
     <body>
