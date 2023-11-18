@@ -166,7 +166,7 @@ class __TwigTemplate_7357fc323e796755a10a25ff9248fba7 extends Template
         echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 28, $this->source); })()), 'form_end');
         echo "
             <div>
-                <a href=\"/login\">CONNECT TO EXISTING ACCOUNT</a>
+                <a href=\"/login\">I HAVE AN ACCOUNT</a>
             </div>
         </div>
     </body>
@@ -225,7 +225,7 @@ class __TwigTemplate_7357fc323e796755a10a25ff9248fba7 extends Template
                 <button type=\"submit\" class=\"btn\">Register</button>
             {{ form_end(registrationForm) }}
             <div>
-                <a href=\"/login\">CONNECT TO EXISTING ACCOUNT</a>
+                <a href=\"/login\">I HAVE AN ACCOUNT</a>
             </div>
         </div>
     </body>

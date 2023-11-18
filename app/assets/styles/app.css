@@ -50,8 +50,16 @@ a {
 }
 
 .logout {
-    font-size : 20px;
+    font-size : 18px;
     color: white;
+    text-shadow: 2px 2px 4px #000; /* Effet d'ombre portée */
+    letter-spacing: 2px; /* Espacement des lettres */
+    font-weight: bold; /* Gras */
+}
+.logout:hover {
+    font-size : 18px;
+    color: black;
+    -webkit-transition: all 0.2s ease-in-out;
 }
 
 .homebutton:hover {

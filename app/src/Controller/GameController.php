@@ -16,6 +16,12 @@ class GameController extends AbstractController
         ]);
     }
 
+    #[Route('/')]
+    public function redirectLogin(): Response
+    {
+        return $this->redirectToRoute('app_login');
+    }
+
     #[Route('/dailystreak')]
     public function dailyStreak(): Response
     {

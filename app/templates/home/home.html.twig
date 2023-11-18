@@ -13,7 +13,9 @@
     <body>
         {% if app.user %}
         <div class="container">
-            Hello {{ app.user.username }} 👋. 
+            <p class="logout">
+                Hello {{ app.user.username }} 👋
+            </p>
         <div>
         {% endif %}
         
@@ -26,12 +28,12 @@
             <a class="homebutton" href="/multiplayer">MULTIPLAYER</a>
             <a class="logout" href="{{ path('app_logout') }}">LOG OUT</a>
 
-            <div class="icons">
+            {# <div class="icons">
                 <img src="path_to_settings_icon.png" alt="Settings" class="icon">
                 <img src="path_to_sound_icon.png" alt="Sound" class="icon">
                 <img src="path_to_video_icon.png" alt="Video" class="icon">
                 <img src="path_to_flag_icon.png" alt="Flag" class="icon">
-            </div>
+            </div> #}
         </div>
     </body>
 {% endblock %}
