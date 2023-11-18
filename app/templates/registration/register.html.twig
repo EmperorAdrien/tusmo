@@ -12,20 +12,23 @@
 
 {% block body %}
     <body>
-    <div class="container">
-        <h1>Register</h1>
+        <div class="container">
+            <h1>Register</h1>
 
-        <p class="alert">{{ form_errors(registrationForm) }}</p>
+            <p class="alert">{{ form_errors(registrationForm) }}</p>
 
-        {{ form_start(registrationForm) }}
-            {{ form_row(registrationForm.email) }}
-            {{ form_row(registrationForm.plainPassword, {
-                label: 'Password'
-            }) }}
-            {{ form_row(registrationForm.agreeTerms) }}
+            {{ form_start(registrationForm) }}
+                {{ form_row(registrationForm.email) }}
+                {{ form_row(registrationForm.plainPassword, {
+                    label: 'Password'
+                }) }}
+                {{ form_row(registrationForm.agreeTerms) }}
 
-            <button type="submit" class="btn">Register</button>
-        {{ form_end(registrationForm) }}
-    </div>
+                <button type="submit" class="btn">Register</button>
+            {{ form_end(registrationForm) }}
+            <div>
+                <a href="/login">CONNECT TO EXISTING ACCOUNT</a>
+            </div>
+        </div>
     </body>
 {% endblock %}

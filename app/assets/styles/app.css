@@ -49,6 +49,11 @@ a {
     font-size : 30px;
 }
 
+.logout {
+    font-size : 30px;
+    color: white;
+}
+
 .homebutton:hover {
     background-color : #009999;
     -webkit-transition: all 0.2s ease-in-out;

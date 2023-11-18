@@ -97,18 +97,14 @@ class __TwigTemplate_86f78d5c5445a89e2245fb8799327591 extends Template
         if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 14, $this->source); })()), "user", [], "any", false, false, false, 14)) {
             // line 15
             echo "        <div class=\"container\">
-            <div class=\"mb-3\">
-                You are logged in as ";
-            // line 17
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 17, $this->source); })()), "user", [], "any", false, false, false, 17), "userIdentifier", [], "any", false, false, false, 17), "html", null, true);
-            echo ", <a href=\"";
-            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_logout");
-            echo "\">Logout</a>
-            </div>
+            Hello ";
+            // line 16
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 16, $this->source); })()), "user", [], "any", false, false, false, 16), "username", [], "any", false, false, false, 16), "html", null, true);
+            echo " 👋. 
         <div>
         ";
         }
-        // line 21
+        // line 19
         echo "        
         <div class=\"container\">
             <div class=\"header\">TUSMO</div>
@@ -117,6 +113,10 @@ class __TwigTemplate_86f78d5c5445a89e2245fb8799327591 extends Template
             <a class=\"homebutton\" href=\"/dailystreak\">DAILY STREAK</a>
             <a class=\"homebutton\" href=\"/solo\">SOLO</a>
             <a class=\"homebutton\" href=\"/multiplayer\">MULTIPLAYER</a>
+            <a class=\"logout\" href=\"";
+        // line 27
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_logout");
+        echo "\">LOG OUT</a>
 
             <div class=\"icons\">
                 <img src=\"path_to_settings_icon.png\" alt=\"Settings\" class=\"icon\">
@@ -147,7 +147,7 @@ class __TwigTemplate_86f78d5c5445a89e2245fb8799327591 extends Template
 
     public function getDebugInfo()
     {
-        return array (  112 => 21,  103 => 17,  99 => 15,  97 => 14,  94 => 13,  84 => 12,  69 => 5,  59 => 4,  36 => 2,);
+        return array (  118 => 27,  108 => 19,  102 => 16,  99 => 15,  97 => 14,  94 => 13,  84 => 12,  69 => 5,  59 => 4,  36 => 2,);
     }
 
     public function getSourceContext()
@@ -167,9 +167,7 @@ class __TwigTemplate_86f78d5c5445a89e2245fb8799327591 extends Template
     <body>
         {% if app.user %}
         <div class=\"container\">
-            <div class=\"mb-3\">
-                You are logged in as {{ app.user.userIdentifier }}, <a href=\"{{ path('app_logout') }}\">Logout</a>
-            </div>
+            Hello {{ app.user.username }} 👋. 
         <div>
         {% endif %}
         
@@ -180,6 +178,7 @@ class __TwigTemplate_86f78d5c5445a89e2245fb8799327591 extends Template
             <a class=\"homebutton\" href=\"/dailystreak\">DAILY STREAK</a>
             <a class=\"homebutton\" href=\"/solo\">SOLO</a>
             <a class=\"homebutton\" href=\"/multiplayer\">MULTIPLAYER</a>
+            <a class=\"logout\" href=\"{{ path('app_logout') }}\">LOG OUT</a>
 
             <div class=\"icons\">
                 <img src=\"path_to_settings_icon.png\" alt=\"Settings\" class=\"icon\">

@@ -181,6 +181,9 @@ class __TwigTemplate_04eda5913b87c0b354259616235819c4 extends Template
         <button class=\"btn btn-lg btn-primary\" type=\"submit\">
             Sign in
         </button>
+        <div class=\"homebutton\">
+            <a href=\"/register\">CREATE AN ACCOUNT</a>
+        </div>
     </form>
 </div>
 ";
@@ -247,6 +250,9 @@ class __TwigTemplate_04eda5913b87c0b354259616235819c4 extends Template
         <button class=\"btn btn-lg btn-primary\" type=\"submit\">
             Sign in
         </button>
+        <div class=\"homebutton\">
+            <a href=\"/register\">CREATE AN ACCOUNT</a>
+        </div>
     </form>
 </div>
 {% endblock %}
