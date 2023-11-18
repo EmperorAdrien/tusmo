@@ -12,9 +12,9 @@ class HomeController extends AbstractController
     public function number(): Response
     {
         // si pas logged in -> renvoie sur login
-        // ...
-        // ...
-
+        if (!($this->getUser())) {
+            return $this->redirectToRoute('app_login');
+        }
 
         // sinon render la page avec infos user
         return $this->render('home/home.html.twig', [
