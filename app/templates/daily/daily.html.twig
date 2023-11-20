@@ -19,13 +19,23 @@
 {% block body %}
 <body>
     <div class="container">
-        <div id="app">
+        <div {{ stimulus_controller('say-hello') }}>
+        <input type="text" {{ stimulus_target('say-hello', 'name') }}>
+
+        <button {{ stimulus_action('say-hello', 'greet') }}>
+            Greet
+        </button>
+
+        <div {{ stimulus_target('say-hello', 'output') }}></div>
+    </div>
+
+
+        {# <div id="app">
             <h1>Wordle Game</h1>
             <p id="word-display">_ _ _ _ _</p>
             <input type="text" id="guess-input" placeholder="Enter your guess">
             <button id="submit-button">Submit Guess</button>
             <p id="result"></p>
-        </div>
-    </div>
+        </div> #}
 </body>
 {% endblock %}
