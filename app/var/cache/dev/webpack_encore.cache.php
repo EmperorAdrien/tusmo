@@ -4,8 +4,50 @@
 
 return [[
 
+'_default' => 0,
 
 ], [
 
+0 => [
+    'entrypoints' => [
+        'app' => [
+            'js' => [
+                '/build/runtime.js',
+                '/build/app.js',
+            ],
+            'css' => [
+                '/build/app.css',
+            ],
+        ],
+        'register' => [
+            'js' => [
+                '/build/runtime.js',
+                '/build/register.js',
+            ],
+            'css' => [
+                '/build/register.css',
+            ],
+        ],
+        'login' => [
+            'js' => [
+                '/build/runtime.js',
+                '/build/login.js',
+            ],
+            'css' => [
+                '/build/login.css',
+            ],
+        ],
+        'daily' => [
+            'js' => [
+                '/build/runtime.js',
+                '/build/vendors-node_modules_core-js_modules_es_array_every_js-node_modules_core-js_modules_es_array_-a1cd35.js',
+                '/build/daily.js',
+            ],
+            'css' => [
+                '/build/daily.css',
+            ],
+        ],
+    ],
+],
 
 ]];

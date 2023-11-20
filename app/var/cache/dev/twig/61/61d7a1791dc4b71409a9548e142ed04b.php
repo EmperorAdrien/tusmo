@@ -48,20 +48,20 @@ class __TwigTemplate_c69b36d740790e743efb3bd44e3a71ec extends Template
 ";
         // line 3
         $this->displayBlock('stylesheets', $context, $blocks);
+        // line 6
+        echo "
+";
+        // line 7
+        $this->displayBlock('javascripts', $context, $blocks);
         // line 10
         echo "
 ";
         // line 11
-        $this->displayBlock('javascripts', $context, $blocks);
-        // line 19
-        echo "
-";
-        // line 20
         $this->displayBlock('style', $context, $blocks);
-        // line 27
+        // line 18
         echo "
 ";
-        // line 28
+        // line 19
         $this->displayBlock('body', $context, $blocks);
         
         $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
@@ -83,13 +83,31 @@ class __TwigTemplate_c69b36d740790e743efb3bd44e3a71ec extends Template
 
         // line 4
         echo "    ";
-        // line 5
-        echo "    ";
         echo $this->extensions['Symfony\WebpackEncoreBundle\Twig\EntryFilesTwigExtension']->renderWebpackLinkTags("daily");
         echo "
+";
+        
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
-    <!-- Renders a link tag (if your module requires any CSS)
-            <link rel=\"stylesheet\" href=\"/build/app.css\"> -->
+        
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
+
+    }
+
+    // line 7
+    public function block_javascripts($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
+
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
+
+        // line 8
+        echo "    ";
+        echo $this->extensions['Symfony\WebpackEncoreBundle\Twig\EntryFilesTwigExtension']->renderWebpackScriptTags("daily");
+        echo "
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -100,34 +118,6 @@ class __TwigTemplate_c69b36d740790e743efb3bd44e3a71ec extends Template
     }
 
     // line 11
-    public function block_javascripts($context, array $blocks = [])
-    {
-        $macros = $this->macros;
-        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
-        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
-
-        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
-
-        // line 12
-        echo "    ";
-        echo $this->extensions['Symfony\WebpackEncoreBundle\Twig\EntryFilesTwigExtension']->renderWebpackScriptTags("daily");
-        echo "
-
-    <!-- Renders app.js & a webpack runtime.js file
-        <script src=\"/build/runtime.js\" defer></script>
-        <script src=\"/build/app.js\" defer></script>
-        See note below about the \"defer\" attribute -->
-";
-        
-        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
-
-        
-        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
-
-    }
-
-    // line 20
     public function block_style($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -137,7 +127,7 @@ class __TwigTemplate_c69b36d740790e743efb3bd44e3a71ec extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "style"));
 
-        // line 21
+        // line 12
         echo "<head>
     <meta charset=\"UTF-8\">
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
@@ -152,7 +142,7 @@ class __TwigTemplate_c69b36d740790e743efb3bd44e3a71ec extends Template
 
     }
 
-    // line 28
+    // line 19
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -162,10 +152,16 @@ class __TwigTemplate_c69b36d740790e743efb3bd44e3a71ec extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 29
+        // line 20
         echo "<body>
     <div class=\"container\">
-        
+        <div id=\"app\">
+            <h1>Wordle Game</h1>
+            <p id=\"word-display\">_ _ _ _ _</p>
+            <input type=\"text\" id=\"guess-input\" placeholder=\"Enter your guess\">
+            <button id=\"submit-button\">Submit Guess</button>
+            <p id=\"result\"></p>
+        </div>
     </div>
 </body>
 ";
@@ -184,7 +180,7 @@ class __TwigTemplate_c69b36d740790e743efb3bd44e3a71ec extends Template
 
     public function getDebugInfo()
     {
-        return array (  166 => 29,  156 => 28,  141 => 21,  131 => 20,  113 => 12,  103 => 11,  87 => 5,  85 => 4,  75 => 3,  65 => 28,  62 => 27,  60 => 20,  57 => 19,  55 => 11,  52 => 10,  50 => 3,  47 => 2,);
+        return array (  156 => 20,  146 => 19,  131 => 12,  121 => 11,  108 => 8,  98 => 7,  85 => 4,  75 => 3,  65 => 19,  62 => 18,  60 => 11,  57 => 10,  55 => 7,  52 => 6,  50 => 3,  47 => 2,);
     }
 
     public function getSourceContext()
@@ -192,20 +188,11 @@ class __TwigTemplate_c69b36d740790e743efb3bd44e3a71ec extends Template
         return new Source("{# templates/daily/daily.html.twig #}
 
 {% block stylesheets %}
-    {# 'app' must match the first argument to addEntry() in webpack.config.js #}
     {{ encore_entry_link_tags('daily') }}
-
-    <!-- Renders a link tag (if your module requires any CSS)
-            <link rel=\"stylesheet\" href=\"/build/app.css\"> -->
 {% endblock %}
 
 {% block javascripts %}
     {{ encore_entry_script_tags('daily') }}
-
-    <!-- Renders app.js & a webpack runtime.js file
-        <script src=\"/build/runtime.js\" defer></script>
-        <script src=\"/build/app.js\" defer></script>
-        See note below about the \"defer\" attribute -->
 {% endblock %}
 
 {% block style %}
@@ -219,7 +206,13 @@ class __TwigTemplate_c69b36d740790e743efb3bd44e3a71ec extends Template
 {% block body %}
 <body>
     <div class=\"container\">
-        
+        <div id=\"app\">
+            <h1>Wordle Game</h1>
+            <p id=\"word-display\">_ _ _ _ _</p>
+            <input type=\"text\" id=\"guess-input\" placeholder=\"Enter your guess\">
+            <button id=\"submit-button\">Submit Guess</button>
+            <p id=\"result\"></p>
+        </div>
     </div>
 </body>
 {% endblock %}", "daily/daily.html.twig", "/var/www/templates/daily/daily.html.twig");
