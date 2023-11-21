@@ -23,6 +23,7 @@ return [
     'app_game_solo' => [[], ['_controller' => 'App\\Controller\\GameController::solo'], [], [['text', '/solo']], [], [], []],
     'app_game_multiplayer' => [[], ['_controller' => 'App\\Controller\\GameController::multiplayer'], [], [['text', '/multiplayer']], [], [], []],
     'app_home' => [[], ['_controller' => 'App\\Controller\\HomeController::number'], [], [['text', '/home']], [], [], []],
+    'app_profil' => [[], ['_controller' => 'App\\Controller\\HomeController::editProfil'], [], [['text', '/profile']], [], [], []],
     'app_register' => [[], ['_controller' => 'App\\Controller\\RegistrationController::register'], [], [['text', '/register']], [], [], []],
     'app_login' => [[], ['_controller' => 'App\\Controller\\SecurityController::login'], [], [['text', '/login']], [], [], []],
     'app_logout' => [[], ['_controller' => 'App\\Controller\\SecurityController::logout'], [], [['text', '/logout']], [], [], []],

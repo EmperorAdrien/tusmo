@@ -21,4 +21,18 @@ class HomeController extends AbstractController
             // 'last_username' => $lastUsername
         ]);
     }
+
+    #[Route('/profile', name: "app_profil")]
+    public function editProfil(): Response
+    {
+        // si pas logged in -> renvoie sur login
+        if (!($this->getUser())) {
+            return $this->redirectToRoute('app_login');
+        }
+
+        // sinon render la page avec infos user
+        return $this->render('profile/profile.html.twig', [
+            // 'last_username' => $lastUsername
+        ]);
+    }
 }
