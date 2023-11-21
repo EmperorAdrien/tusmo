@@ -149,10 +149,15 @@ class __TwigTemplate_048477e60849516d7eeaca0c6213aec1 extends Template
         // line 23
         echo "<body>
         ";
-        // line 31
-        echo "        <h1>Compteur Hexadécimal</h1>
-        <p id=\"counter\">0</p>
-        <button id=\"incrementButton\">Incrémenter</button>
+        // line 27
+        echo "        <div id=\"app\">
+            <h1>Wordle Game</h1>
+            <p id=\"word-display\">_ _ _ _ _</p>
+            <p id=\"guessed-letters\">Guessed Letters: </p>
+            <input type=\"text\" id=\"guess-input\" placeholder=\"Enter your guess\">
+            <button id=\"submit-button\">Submit Guess</button>
+            <p id=\"result\"></p>
+        </div>
 </body>
 ";
         
@@ -175,7 +180,7 @@ class __TwigTemplate_048477e60849516d7eeaca0c6213aec1 extends Template
 
     public function getDebugInfo()
     {
-        return array (  153 => 31,  150 => 23,  140 => 22,  125 => 15,  115 => 14,  103 => 11,  98 => 10,  88 => 9,  76 => 6,  71 => 5,  61 => 4,  38 => 2,);
+        return array (  153 => 27,  150 => 23,  140 => 22,  125 => 15,  115 => 14,  103 => 11,  98 => 10,  88 => 9,  76 => 6,  71 => 5,  61 => 4,  38 => 2,);
     }
 
     public function getSourceContext()
@@ -203,16 +208,17 @@ class __TwigTemplate_048477e60849516d7eeaca0c6213aec1 extends Template
 
 {% block body %}
 <body>
-        {# <div id=\"app\">
+        {# <h1>Compteur Hexadécimal</h1>
+        <p id=\"counter\">0</p>
+        <button id=\"incrementButton\">Incrémenter</button> #}
+        <div id=\"app\">
             <h1>Wordle Game</h1>
             <p id=\"word-display\">_ _ _ _ _</p>
+            <p id=\"guessed-letters\">Guessed Letters: </p>
             <input type=\"text\" id=\"guess-input\" placeholder=\"Enter your guess\">
             <button id=\"submit-button\">Submit Guess</button>
             <p id=\"result\"></p>
-        </div> #}
-        <h1>Compteur Hexadécimal</h1>
-        <p id=\"counter\">0</p>
-        <button id=\"incrementButton\">Incrémenter</button>
+        </div>
 </body>
 {% endblock %}", "daily/daily.html.twig", "/var/www/templates/daily/daily.html.twig");
     }
