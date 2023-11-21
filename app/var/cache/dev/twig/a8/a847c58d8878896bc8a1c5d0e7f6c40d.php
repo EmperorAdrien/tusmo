@@ -148,16 +148,17 @@ class __TwigTemplate_048477e60849516d7eeaca0c6213aec1 extends Template
 
         // line 23
         echo "<body>
-        ";
+    ";
         // line 27
-        echo "        <div id=\"app\">
-            <h1>Wordle Game</h1>
-            <p id=\"word-display\">_ _ _ _ _</p>
-            <p id=\"guessed-letters\">Guessed Letters: </p>
-            <input type=\"text\" id=\"guess-input\" placeholder=\"Enter your guess\">
-            <button id=\"submit-button\">Submit Guess</button>
-            <p id=\"result\"></p>
-        </div>
+        echo "    <div id=\"app\">
+        <h1>Wordle Game</h1>
+        <p id=\"word-display\">_ _ _ _ _</p>
+        <p id=\"guessed-letters\">Guessed Letters: </p>
+        <div id=\"alphabet\"></div>
+        <input type=\"text\" id=\"guess-input\" placeholder=\"Enter your guess\">
+        <button id=\"submit-button\">Submit Guess</button>
+        <p id=\"result\"></p>
+    </div>
 </body>
 ";
         
@@ -208,17 +209,18 @@ class __TwigTemplate_048477e60849516d7eeaca0c6213aec1 extends Template
 
 {% block body %}
 <body>
-        {# <h1>Compteur Hexadécimal</h1>
-        <p id=\"counter\">0</p>
-        <button id=\"incrementButton\">Incrémenter</button> #}
-        <div id=\"app\">
-            <h1>Wordle Game</h1>
-            <p id=\"word-display\">_ _ _ _ _</p>
-            <p id=\"guessed-letters\">Guessed Letters: </p>
-            <input type=\"text\" id=\"guess-input\" placeholder=\"Enter your guess\">
-            <button id=\"submit-button\">Submit Guess</button>
-            <p id=\"result\"></p>
-        </div>
+    {# <h1>Compteur Hexadécimal</h1>
+    <p id=\"counter\">0</p>
+    <button id=\"incrementButton\">Incrémenter</button> #}
+    <div id=\"app\">
+        <h1>Wordle Game</h1>
+        <p id=\"word-display\">_ _ _ _ _</p>
+        <p id=\"guessed-letters\">Guessed Letters: </p>
+        <div id=\"alphabet\"></div>
+        <input type=\"text\" id=\"guess-input\" placeholder=\"Enter your guess\">
+        <button id=\"submit-button\">Submit Guess</button>
+        <p id=\"result\"></p>
+    </div>
 </body>
 {% endblock %}", "daily/daily.html.twig", "/var/www/templates/daily/daily.html.twig");
     }

@@ -21,16 +21,14 @@
 
 {% block body %}
 <body>
-        {# <h1>Compteur Hexadécimal</h1>
-        <p id="counter">0</p>
-        <button id="incrementButton">Incrémenter</button> #}
-        <div id="app">
-            <h1>Wordle Game</h1>
-            <p id="word-display">_ _ _ _ _</p>
-            <p id="guessed-letters">Guessed Letters: </p>
-            <input type="text" id="guess-input" placeholder="Enter your guess">
-            <button id="submit-button">Submit Guess</button>
-            <p id="result"></p>
-        </div>
+    <div id="app">
+        <h1>Wordle Game</h1>
+        <p id="word-display">_ _ _ _ _</p>
+        <p id="guessed-letters">Guessed Letters: </p>
+        <div id="alphabet"></div>
+        <input type="text" id="guess-input" placeholder="Enter your guess">
+        <button id="submit-button">Submit Guess</button>
+        <p id="result"></p>
+    </div>
 </body>
 {% endblock %}
