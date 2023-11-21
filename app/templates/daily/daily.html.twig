@@ -1,10 +1,13 @@
 {# templates/daily/daily.html.twig #}
+{% extends 'base.html.twig' %}
 
 {% block stylesheets %}
+    {{ parent() }}
     {{ encore_entry_link_tags('daily') }}
 {% endblock %}
 
 {% block javascripts %}
+    {{ parent() }}
     {{ encore_entry_script_tags('daily') }}
 {% endblock %}
 
@@ -18,18 +21,6 @@
 
 {% block body %}
 <body>
-    <div class="container">
-        <div {{ stimulus_controller('say-hello') }}>
-        <input type="text" {{ stimulus_target('say-hello', 'name') }}>
-
-        <button {{ stimulus_action('say-hello', 'greet') }}>
-            Greet
-        </button>
-
-        <div {{ stimulus_target('say-hello', 'output') }}></div>
-    </div>
-
-
         {# <div id="app">
             <h1>Wordle Game</h1>
             <p id="word-display">_ _ _ _ _</p>
@@ -37,5 +28,8 @@
             <button id="submit-button">Submit Guess</button>
             <p id="result"></p>
         </div> #}
+        <h1>Compteur Hexadécimal</h1>
+        <p id="counter">0</p>
+        <button id="incrementButton">Incrémenter</button>
 </body>
 {% endblock %}

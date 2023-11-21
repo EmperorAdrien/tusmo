@@ -13,6 +13,8 @@ return [[
         'app' => [
             'js' => [
                 '/build/runtime.js',
+                '/build/vendors-node_modules_core-js_modules_es_error_to-string_js-node_modules_core-js_modules_es_ob-7e6069.js',
+                '/build/vendors-node_modules_symfony_stimulus-bridge_dist_index_js-node_modules_core-js_modules_es_da-73c3e9.js',
                 '/build/app.js',
             ],
             'css' => [
@@ -40,7 +42,7 @@ return [[
         'daily' => [
             'js' => [
                 '/build/runtime.js',
-                '/build/vendors-node_modules_core-js_modules_es_array_every_js-node_modules_core-js_modules_es_array_-a1cd35.js',
+                '/build/vendors-node_modules_core-js_modules_es_error_to-string_js-node_modules_core-js_modules_es_ob-7e6069.js',
                 '/build/daily.js',
             ],
             'css' => [

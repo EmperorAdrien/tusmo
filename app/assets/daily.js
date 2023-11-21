@@ -1,11 +1,3 @@
-/*
- * Welcome to your app's main JavaScript file!
- *
- * We recommend including the built version of this JavaScript file
- * (and its CSS file) in your base layout (base.html.twig).
- */
-
-// any CSS you import will output into a single css file (app.css in this case)
 import './styles/daily.css';
 
 // document.addEventListener('DOMContentLoaded', function () {
@@ -40,3 +32,20 @@ import './styles/daily.css';
 
 //     document.getElementById('submit-button').addEventListener('click', submitGuess);
 // });
+
+console.log("This thing is working");
+
+document.addEventListener('DOMContentLoaded', function () {
+    let decimalCounter = 0;
+  
+    document.getElementById('incrementButton').addEventListener('click', function () {
+      decimalCounter++;
+      updateCounter();
+    });
+  
+    function updateCounter() {
+      const hexValue = decimalCounter.toString(16).toUpperCase();
+      document.getElementById('counter').innerText = hexValue;
+    }
+  });
+  

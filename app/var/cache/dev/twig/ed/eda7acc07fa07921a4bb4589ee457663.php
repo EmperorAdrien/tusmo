@@ -154,33 +154,19 @@ class __TwigTemplate_1f88223443bdba2f4fef0d03485176e9 extends Template
 
         // line 20
         echo "<body>
-    <div class=\"container\">
-        <div ";
-        // line 22
-        echo $this->extensions['Symfony\UX\StimulusBundle\Twig\StimulusTwigExtension']->renderStimulusController("say-hello");
-        echo ">
-        <input type=\"text\" ";
-        // line 23
-        echo $this->extensions['Symfony\UX\StimulusBundle\Twig\StimulusTwigExtension']->renderStimulusTarget("say-hello", "name");
-        echo ">
-
-        <button ";
-        // line 25
-        echo $this->extensions['Symfony\UX\StimulusBundle\Twig\StimulusTwigExtension']->renderStimulusAction("say-hello", "greet");
-        echo ">
-            Greet
-        </button>
-
-        <div ";
-        // line 29
-        echo $this->extensions['Symfony\UX\StimulusBundle\Twig\StimulusTwigExtension']->renderStimulusTarget("say-hello", "output");
-        echo "></div>
-    </div>
-
-
         ";
-        // line 40
-        echo "</body>
+        // line 28
+        echo "        <div ";
+        echo $this->extensions['Symfony\UX\StimulusBundle\Twig\StimulusTwigExtension']->renderStimulusController("hello");
+        echo ">
+            ";
+        // line 30
+        echo "        </div>
+        <h1>Compteur Hexadécimal</h1>
+        <p id=\"counter\">0</p>
+        <button onclick=\"incrementCounter()\">Incrémenter</button>
+        <script src=\"script.js\"></script>
+</body>
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -197,7 +183,7 @@ class __TwigTemplate_1f88223443bdba2f4fef0d03485176e9 extends Template
 
     public function getDebugInfo()
     {
-        return array (  183 => 40,  176 => 29,  169 => 25,  164 => 23,  160 => 22,  156 => 20,  146 => 19,  131 => 12,  121 => 11,  108 => 8,  98 => 7,  85 => 4,  75 => 3,  65 => 19,  62 => 18,  60 => 11,  57 => 10,  55 => 7,  52 => 6,  50 => 3,  47 => 2,);
+        return array (  164 => 30,  159 => 28,  156 => 20,  146 => 19,  131 => 12,  121 => 11,  108 => 8,  98 => 7,  85 => 4,  75 => 3,  65 => 19,  62 => 18,  60 => 11,  57 => 10,  55 => 7,  52 => 6,  50 => 3,  47 => 2,);
     }
 
     public function getSourceContext()
@@ -222,18 +208,6 @@ class __TwigTemplate_1f88223443bdba2f4fef0d03485176e9 extends Template
 
 {% block body %}
 <body>
-    <div class=\"container\">
-        <div {{ stimulus_controller('say-hello') }}>
-        <input type=\"text\" {{ stimulus_target('say-hello', 'name') }}>
-
-        <button {{ stimulus_action('say-hello', 'greet') }}>
-            Greet
-        </button>
-
-        <div {{ stimulus_target('say-hello', 'output') }}></div>
-    </div>
-
-
         {# <div id=\"app\">
             <h1>Wordle Game</h1>
             <p id=\"word-display\">_ _ _ _ _</p>
@@ -241,6 +215,13 @@ class __TwigTemplate_1f88223443bdba2f4fef0d03485176e9 extends Template
             <button id=\"submit-button\">Submit Guess</button>
             <p id=\"result\"></p>
         </div> #}
+        <div {{ stimulus_controller('hello') }}>
+            {# ... #}
+        </div>
+        <h1>Compteur Hexadécimal</h1>
+        <p id=\"counter\">0</p>
+        <button onclick=\"incrementCounter()\">Incrémenter</button>
+        <script src=\"script.js\"></script>
 </body>
 {% endblock %}", "daily/daily.html.twig", "/var/www/templates/daily/daily.html.twig");
     }

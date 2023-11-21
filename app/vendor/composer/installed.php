@@ -1136,15 +1136,6 @@
                 0 => '1.1|2.0|3.0',
             ),
         ),
-        'symfony/stimulus-bundle' => array(
-            'pretty_version' => 'v2.13.2',
-            'version' => '2.13.2.0',
-            'reference' => 'd7190749571a7a02664b677dab37f8949315b4d5',
-            'type' => 'symfony-bundle',
-            'install_path' => __DIR__ . '/../symfony/stimulus-bundle',
-            'aliases' => array(),
-            'dev_requirement' => false,
-        ),
         'symfony/stopwatch' => array(
             'pretty_version' => 'v6.3.0',
             'version' => '6.3.0.0',
