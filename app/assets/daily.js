@@ -27,27 +27,32 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function submitGuess() {
-      const guessInput = document.getElementById('guess-input');
-      const guess = guessInput.value.toLowerCase();
+    const guessInput = document.getElementById('guess-input');
+    const guess = guessInput.value.toLowerCase();
+    const resultMessage = document.getElementById('result');
 
-      if (guess.length === 1 && guess.match(/[a-z]/i)) {
-          if (!guessedLetters.includes(guess)) {
-              guessedLetters.push(guess);
-              displayWord();
-              updateGuessedLettersDisplay();
+    if (guess.length === 1 && guess.match(/[a-z]/i)) {
+        if (!guessedLetters.includes(guess)) {
+            guessedLetters.push(guess);
+            displayWord();
+            updateGuessedLettersDisplay();
 
-              if (wordToGuess.split('').every(letter => guessedLetters.includes(letter))) {
-                  document.getElementById('result').innerText = 'Congratulations! You guessed the word!';
-              }
-          } else {
-              document.getElementById('result').innerText = 'You already guessed that letter. Try again.';
-          }
-      } else {
-          document.getElementById('result').innerText = 'Please enter a single alphabetical letter.';
-      }
+            if (wordToGuess.split('').every(letter => guessedLetters.includes(letter))) {
+                resultMessage.innerText = 'Congratulations! You guessed the word!';
+            } else {
+                // Clear the result message
+                resultMessage.innerText = '';
+            }
+        } else {
+            resultMessage.innerText = 'You already guessed that letter. Try again.';
+        }
+    } else {
+        resultMessage.innerText = 'Please enter a single alphabetical letter.';
+    }
 
-      guessInput.value = '';
-  }
+    guessInput.value = '';
+}
+
 
   // Attach event listener to the button
   document.getElementById('submit-button').addEventListener('click', submitGuess);

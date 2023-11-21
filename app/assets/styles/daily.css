@@ -9,5 +9,6 @@ body {
 
 .guessed {
     color: green;
+    background-color: aliceblue;
     font-weight: bold;
 }
