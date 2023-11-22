@@ -12,39 +12,48 @@ return [[
     'entrypoints' => [
         'app' => [
             'js' => [
-                '/build/runtime.js',
-                '/build/app.js',
+                '/build/runtime.ec2b70cf.js',
+                '/build/app.aa1bf742.js',
             ],
             'css' => [
-                '/build/app.css',
+                '/build/app.f8c4e978.css',
             ],
         ],
         'register' => [
             'js' => [
-                '/build/runtime.js',
-                '/build/register.js',
+                '/build/runtime.ec2b70cf.js',
+                '/build/register.6c1c31d7.js',
             ],
             'css' => [
-                '/build/register.css',
+                '/build/register.7b0d0770.css',
             ],
         ],
         'login' => [
             'js' => [
-                '/build/runtime.js',
-                '/build/login.js',
+                '/build/runtime.ec2b70cf.js',
+                '/build/login.4f1de672.js',
             ],
             'css' => [
-                '/build/login.css',
+                '/build/login.7b0d0770.css',
             ],
         ],
         'daily' => [
             'js' => [
-                '/build/runtime.js',
-                '/build/vendors-node_modules_core-js_modules_es_date_to-string_js-node_modules_core-js_modules_es_err-949cc5.js',
-                '/build/daily.js',
+                '/build/runtime.ec2b70cf.js',
+                '/build/43.cb125481.js',
+                '/build/daily.0a517518.js',
             ],
             'css' => [
-                '/build/daily.css',
+                '/build/daily.bd4c71b0.css',
+            ],
+        ],
+        'profile' => [
+            'js' => [
+                '/build/runtime.ec2b70cf.js',
+                '/build/profile.62e65466.js',
+            ],
+            'css' => [
+                '/build/profile.802c33d2.css',
             ],
         ],
     ],

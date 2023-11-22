@@ -23,7 +23,7 @@ class HomeController extends AbstractController
     }
 
     #[Route('/profile', name: "app_profil")]
-    public function editProfil(): Response
+    public function showProfil(): Response
     {
         // si pas logged in -> renvoie sur login
         if (!($this->getUser())) {
@@ -35,4 +35,6 @@ class HomeController extends AbstractController
             // 'last_username' => $lastUsername
         ]);
     }
+
+    
 }

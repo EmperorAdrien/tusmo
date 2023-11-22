@@ -1,18 +1,34 @@
 {# templates/profile/profile.html.twig #}
 {% extends 'base.html.twig' %}
 
+{% block stylesheets %}
+    {{ encore_entry_link_tags('profile') }}
+{% endblock %}
+
 {% block style %}
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit profil</title>
+    <title>My profile</title>
 </head>
 {% endblock %}
+
 
 {% block body %}
 <body>
     <div class="container">
-        HELLO THIS IS WORKING
+        <p class="title">MON COMPTE UTILISATEUR</p>
+        <ul>
+            <li>
+                Pseudo : {{app.user.username}} 
+                <a class="info" href="/profile/edit">modifier</a>
+            </li>
+            <li>Email : {{app.user.email}}</li>
+
+            <li><a class="info" href="/profile/delete">supprimer mon compte</a></li>
+            <a class="#" href="/home">retour</a>
+        </ul>
+        
     </div>
 </body>
 {% endblock %}

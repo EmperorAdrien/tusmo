@@ -1,0 +1,22 @@
+{# templates/profile/edit.html.twig #}
+{% extends 'base.html.twig' %}
+
+{% block style %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit profil</title>
+</head>
+{% endblock %}
+
+{% block body %}
+<body>
+    <div class="container">
+        {{ form_start(formi) }}
+            {{ form_row(formi.username) }} 
+            {{ form_row(formi.save) }}
+        {{ form_end(formi) }}
+        <a class="" href="/profile">retour</a>
+    </div>
+</body>
+{% endblock %}
