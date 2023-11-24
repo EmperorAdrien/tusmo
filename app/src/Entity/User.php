@@ -33,6 +33,15 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\Column(length: 255)]
     private ?string $username = null;
 
+    #[ORM\Column]
+    private ?int $score = null;
+
+    #[ORM\Column]
+    private ?int $gamePlayed = null;
+
+    #[ORM\Column]
+    private ?int $wins = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -111,6 +120,42 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     public function setUsername(string $username): static
     {
         $this->username = $username;
+
+        return $this;
+    }
+
+    public function getScore(): ?int
+    {
+        return $this->score;
+    }
+
+    public function setScore(int $score): static
+    {
+        $this->score = $score;
+
+        return $this;
+    }
+
+    public function getGamePlayed(): ?int
+    {
+        return $this->gamePlayed;
+    }
+
+    public function setGamePlayed(int $gamePlayed): static
+    {
+        $this->gamePlayed = $gamePlayed;
+
+        return $this;
+    }
+
+    public function getWins(): ?int
+    {
+        return $this->wins;
+    }
+
+    public function setWins(int $wins): static
+    {
+        $this->wins = $wins;
 
         return $this;
     }
